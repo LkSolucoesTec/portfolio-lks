@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKS Soluções Tecnológicas - Desenvolvedor Criativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="loading-container">
+            <div id="loading-text">LOADING...</div>
+            <div id="loading-bar-frame">
+                <div id="loading-bar-fill"></div>
+            </div>
+        </div>
+        <div id="animated-photo-container">
+            <img src="futurista.png" alt="André Lucas - Desenvolvedor Criativo" id="animated-photo">
+        </div>
+        <div id="curtain-transition"></div>
+    </div>
+
+    <canvas id="matrix-background"></canvas>
+
+    <div id="main-site-content">
+        <header class="main-header">
+            <nav>
+              <div class="logo">LKS</div>
+              <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul id="nav-links">
+                <li><a href="#sobre-mim">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1 id="main-title"></h1>
+                    <p id="subtitle"></p>
+                    <a href="#portfolio" class="cta-button">Ver Projetos</a>
+                </div>
+            </section>
+
+            <section id="sobre-mim" class="content-section">
+                <div class="about-me-layout reveal">
+                    <div class="about-photo">
+                        <img src="Foto profissional.png" alt="Foto profissional de André Lucas">
+                    </div>
+                    <div class="about-text">
+                        <h2>Sobre Mim: A Mente por Trás da Inovação</h2>
+                        <p>Meu nome é <strong>André Lucas</strong>, e minha paixão é transformar desafios complexos em soluções tecnológicas elegantes e eficientes. Dedico minha carreira a explorar o potencial ilimitado da Inteligência Artificial e da automação para impulsionar negócios.</p>
+                        <p>Meu compromisso é ser a ponte entre a sua visão e a realidade digital, entregando resultados que excedem as expectativas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="content-section">
+                <h2 class="reveal">Portfólio: O Futuro em Ação</h2>
+                <div class="scene">
+                    <div class="carousel" id="carousel">
+                        <div class="card" data-id="card1"><img src="website.jpeg" alt="Websites"><h3>Websites</h3></div>
+                        <div class="card" data-id="card2"><img src="automação.jpeg" alt="Automação"><h3>Automação</h3></div>
+                        <div class="card" data-id="card3"><img src="ia.jpeg" alt="Agentes de IA"><h3>Agentes de IA</h3></div>
+                        <div class="card" data-id="card4"><img src="design.jpeg" alt="Design Gráfico"><h3>Design</h3></div>
+                        <div class="card" data-id="card5"><img src="saas.jpeg" alt="Micro SaaS"><h3>Micro SaaS</h3></div>
+                    </div>
+                    <button class="carousel-nav prev" id="prev-btn" aria-label="Anterior">&lt;</button>
+                    <button class="carousel-nav next" id="next-btn" aria-label="Próximo">&gt;</button>
+                </div>
+            </section>
+            
+            <div id="popup-card1" class="popup"><h2>Websites</h2><p>Criamos websites, blogs e landing pages de alta performance, com design moderno e foco na experiência do usuário. O resultado é uma presença digital profissional que atrai visitantes, fortalece sua marca e os transforma em clientes.<br><br><strong>Quer ver os resultados? Clique no botão abaixo e descubra.</strong></p><div class="popup-buttons"><a href="#" target="_blank" class="popup-link-btn">Clique aqui e descubra</a><button class="popup-close">Fechar</button></div></div>
+            <div id="popup-card2" class="popup"><h2>Automação</h2><p>Desenvolvemos robôs e sistemas para automatizar tarefas manuais e processos repetitivos da sua empresa. Liberamos sua equipe para focar em atividades estratégicas, aumentando a produtividade e eliminando a ocorrência de erros.<br><br><strong>Quer ver os resultados? Clique no botão abaixo e descubra.</strong></p><div class="popup-buttons"><a href="#" target="_blank" class="popup-link-btn">Clique aqui e descubra</a><button class="popup-close">Fechar</button></div></div>
+            <div id="popup-card3" class="popup"><h2>Agentes de IA</h2><p>Implementamos agentes de Inteligência Artificial e chatbots para otimizar o atendimento ao cliente e analisar dados de forma inteligente. Ofereça um serviço disponível 24/7 e tome decisões mais assertivas para o seu negócio.<br><br><strong>Quer ver os resultados? Clique no botão abaixo e descubra.</strong></p><div class="popup-buttons"><a href="#" target="_blank" class="popup-link-btn">Clique aqui e descubra</a><button class="popup-close">Fechar</button></div></div>
+            <div id="popup-card4" class="popup"><h2>Design</h2><p>Criamos a identidade visual completa da sua marca, do logotipo e flyers até a interface de sistemas (UI/UX). Garantimos que sua empresa transmita profissionalismo e se destaque da concorrência com um visual único e memorável.<br><br><strong>Quer ver os resultados? Clique no botão abaixo e descubra.</strong></p><div class="popup-buttons"><a href="#" target="_blank" class="popup-link-btn">Clique aqui e descubra</a><button class="popup-close">Fechar</button></div></div>
+            <div id="popup-card5" class="popup"><h2>Micro SaaS</h2><p>Transformamos sua ideia inovadora em um produto digital (Software as a Service) pronto para o mercado. Cuidamos de toda a tecnologia para que você possa lançar seu projeto e construir um negócio online lucrativo e escalável.<br><br><strong>Quer ver os resultados? Clique no botão abaixo e descubra.</strong></p><div class="popup-buttons"><a href="#" target="_blank" class="popup-link-btn">Clique aqui e descubra</a><button class="popup-close">Fechar</button></div></div>
+
+            <section id="solucoes" class="content-section">
+                 <div class="solutions-layout reveal">
+                    <div class="solutions-photo-column">
+                        <img src="robo.png" alt="Imagem de um robô ou tecnologia abstrata">
+                    </div>
+                    <div class="solutions-text-column">
+                        <div class="services-container">
+                            <h2 class="services-title">Nossas Soluções</h2>
+                            <ul class="services-list">
+                                <li class="service-item"><i class="service-icon fas fa-desktop"></i><div class="service-text"><h3 class="service-name">Web Design & Desenvolvimento</h3><p class="service-description">Criação de Sites, Landing Pages e Blogs institucionais.</p></div></li>
+                                <li class="service-item"><i class="service-icon fas fa-cogs"></i><div class="service-text"><h3 class="service-name">Automação de Tarefas</h3><p class="service-description">Otimize sua rotina com a automação de processos manuais.</p></div></li>
+                                <li class="service-item"><i class="service-icon fas fa-palette"></i><div class="service-text"><h3 class="service-name">Design e Identidade Visual</h3><p class="service-description">Desenvolvimento de Logos e a identidade completa da sua marca.</p></div></li>
+                                <li class="service-item"><i class="service-icon fas fa-brain"></i><div class="service-text"><h3 class="service-name">Agentes de IA & Chatbots</h3><p class="service-description">Modernize seu atendimento com chatbots inteligentes.</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+            
+            <hr class="stylish-divider reveal">
+
+            <section id="contato" class="content-section contact-layout">
+                <div class="contact-text reveal">
+                    <h2>Vamos Construir o Futuro Juntos?</h2>
+                    <p>Pronto para levar seu negócio ao próximo nível? Estou aqui para entender seu desafio e desenhar a solução tecnológica perfeita. Preencha o formulário ou me chame diretamente no WhatsApp!</p>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form id="contact-form" action="https://formspree.io/f/mblzylza" method="POST">
+                        <input type="text" name="Nome" placeholder="Seu nome" required>
+                        <input type="email" name="Email" placeholder="Seu e-mail" required>
+                        <input type="tel" name="Telefone" placeholder="Seu Telefone de contato" required>
+                        <textarea name="Mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                        <div class="form-buttons">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <hr class="stylish-divider reveal">
+
+            <section id="connect" class="content-section">
+                <div class="whatsapp-cta-container reveal">
+                    <a href="https://wa.me/5511961608885" class="whatsapp-button"><i class="fab fa-whatsapp"></i><span>Clique aqui e vamos conversar</span></a>
+                </div>
+                <div class="socials reveal">
+                    <p>Acompanhe os bastidores e novidades nas redes</p>
+                    <div class="social-links-final">
+                        <a href="https://www.instagram.com/lkstecnologia" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>LKS SOLUÇÕES TECNOLÓGICAS, todos os direitos reservados 2025</p>
+            <p>Gostou do site? Me chame! lkssolucoestec@hotmail.com | whats(11) 96160-8885</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
